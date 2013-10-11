@@ -174,6 +174,19 @@ class Module_Comments extends AbstractModule
 				'module' => 'comments',
 				'order' => 965,
 			),
+			array(
+				'slug' => 'comments_enabled_default',
+                'title' => 'Comments Enabled default value',
+                'description' => 'Set the default duration while comments are enabled. (Used for instance in blog posts...)',
+                'type' => 'select',
+                'default' => '3 months',
+                'value' => '3 months',
+                'options' => 'no=No|1 day=1 day|1 week=1 week|2 weeks=2 weeks|1 month=1 month|3 months=3 months|always=always',
+                'is_required' => 1,
+                'is_gui' => 1,
+                'module' => 'comments',
+                'order' => 964
+			),
 		));
 
 		return true;
